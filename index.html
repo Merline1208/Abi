@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ratatouille</title>
+</head>
+
+<body>
+
+    <div class="main-header">
+        <img src="logo.jpg" alt="Cafe Logo" class="logo">
+        <div class="header-content">
+            <h1>Ratatouille</h1>
+            <p class="est">Est.1999</p>
+        </div>
+    </div>
+
+    <div class="main-menu">
+        <a href="#reservations">Reservations</a>
+        <a href="food.html">Food Menu</a>
+        <a href="books.html">Books</a>
+        <a href="#about-us">About Us</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <section class="about-us" id="about-us">
+        <div class="about-us-content">
+            <div class="about-us-left">
+                <img src="aboutus.jpg" alt="About Us Image">
+            </div>
+            <div class="about-us-right">
+                <h2>ABOUT US</h2>
+                <p>Welcome to our cozy bookstore cafe! We love books and coffee.
+                    Grab a book, enjoy a drink, and make yourself at home.
+                    We're here to share the joy of reading and sipping with you.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="reservations" id="reservations">
+        <div class="reservations-content">
+            <div class="reservations-left">
+                <img src="reserve.jpg" alt="Reservation Image">
+            </div>
+            <div class="reservations-right">
+                <label for="reservation-date">Date:</label>
+                <input type="date" id="reservation-date" required>
+
+                <label for="reservation-time">Time:</label>
+                <input type="time" id="reservation-time" required>
+
+                <button onclick="openReservationPopup()">Continue</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-content">
+            <p><b>Contact</b></p>
+            <p>Jerlin | Varshini | Avanthika | Abirami | Asin</p>
+            <p>B Tech IT</p>
+            <br>
+            <p>Phone : 1234567890</p>
+        </div>
+    </section>
+
+    <div class="scroll-top" onclick="scrollToTop()">
+        <div class="arrow-up"></div>
+    </div>
+
+    <!-- Popup Form for Reservation -->
+    <div class="popup" id="reservation-popup" style="display:none;">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2>Enter Your Details</h2>
+            <p><b>Date:</b> <span id="display-date"></span></p>
+            <p><b>Time:</b> <span id="display-time"></span></p>
+
+            <form id="reservation-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments"></textarea>
+
+                <button type="button" onclick="submitReservation()">Submit</button>
+                <p id="reservation-message"></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

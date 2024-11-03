@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="stylesbooks.css">
+  <title>Book Menu</title>
+  <style>
+    .menu-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .book-item {
+      width: 30%;
+      margin-bottom: 32px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .book-item img {
+      width: 50%; /* Take up the full width of the container */
+      height: auto;
+    }
+
+    .book-details {
+      text-align: center; 
+    }
+  </style>
+</head>
+<body>
+
+  <div class="main-header">
+    <img src="logo.jpg" alt="Cafe Logo" class="logo">
+    <div class="header-content">
+        <h1>Ratatouille</h1>
+        <p class="est">Est.1999</p>
+    </div>
+</div>
+
+<div class="main-menu">
+    <a href="home.html">Back to home</a>
+</div>
+
+  <!-- Menu Container -->
+  <div class="menu-container">
+    <h1 class="menu-title">BOOK CATEGORIES</h1>
+    
+    <div class="menu-category">
+      <div class="menu-link" onclick="openMenu(event, 'Fiction');">Fiction</div>
+      <div class="menu-link" onclick="openMenu(event, 'SelfHelp');">Self Help</div>
+      <div class="menu-link" onclick="openMenu(event, 'Fantasy');">Fantasy</div>
+      <div class="menu-link" onclick="openMenu(event, 'YoungAdult');">Young Adult</div>
+      <div class="menu-link" onclick="openMenu(event, 'Thriller');">Thriller</div>
+    </div>
+
+    <!-- Fiction Books -->
+    <div id="Fiction" class="menu-content menu">
+      <div class="book-item">
+        <img src="F1.jpeg" alt="Fiction Book 1">
+        <div class="book-details">
+          <div class="book-title">Shadow and Bone</div>
+          <p class="book-description">Sinister forces plot against a young soldier after she reveals powers that could unit her world.</p>
+        </div>
+      </div>
+
+      <div class="book-item">
+        <img src="F2.jpeg" alt="Fiction Book 2">
+        <div class="book-details">
+          <div class="book-title">The Cruel Prince</div>
+          <p class="book-description">Lush, dangerous, intoxicating...A thrilling fantasy.</p>
+        </div>
+      </div>
+
+      <div class="book-item">
+        <img src="F3.jpeg" alt="Fiction Book 3">
+        <div class="book-details">
+          <div class="book-title">House of Earth & Blood</div>
+          <p class="book-description">A contemporary world of magic, danger and thrilling fantasy.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Self Help Books -->
+    <div id="SelfHelp" class="menu-content menu">
+      <div class="book-item">
+        <img src="S1.jpeg" alt="Self Help Book 1">
+        <div class="book-details">
+          <div class="book-title">The mountain is you</div>
+          <p class="book-description">An empowering read that'll show you how to fulfill your real potential.</p>
+        </div>
+      </div>
+
+      <div class="book-item">
+        <img src="S2.jpeg" alt="Self Help Book 2">
+        <div class="book-details">
+          <div class="book-title">Atomic Habits</div>
+          <p class="book-description">Practical and useful, information about habit formation.</p>
+        </div>
+      </div>
+
+      <div class="book-item">
+        <img src="S3.jpeg" alt="Self Help Book 3">
+        <div class="book-details">
+          <div class="book-title">The midnight library</div>
+          <p class="book-description">A novel about all the choices that go into a life well lived.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fantasy Books -->
+    <div id="Fantasy" class="menu-content menu">
+      <div class="book-item">
+        <img src="Fan 1.jpeg" alt="Fantasy Book 1">
+        <div class="book-details">
+          <div class="book-title">Lost in the Never woods</div>
+          <p class="book-description">When children start to go missing in the local woods, 
+            a teen girl must face her fears and a past she can't remember to rescue them in this atmospheric YA novel.</p>
+        </div>
+      </div>
+
+      <div class="book-item">
+        <img src="Fan2.jpeg" alt="Fantasy Book 2">
+        <div class="book-details">
+          <div class="book-title">Fourth Wing</div>
+          <p class="book-description">A young scribe is thrust into an elite war college for dragon riders where the only rule is graduate or perish.</p>
+        </div>
+      </div>
+
+      <div class="book-item">
+        <img src="Fan3.jpeg" alt="Fantasy Book 3">
+        <div class="book-details">
+          <div class="book-title">The Atlas Six</div>
+          <p class="book-description">The Atlas Six follows six unbelievably attractive magicians as they fight for a place in the Alexandrian Society, switching loyalties and lust.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Young Adult Books -->
+    <div id="YoungAdult" class="menu-content menu">
+      <div class="book-item">
+        <img src="Ya 1.jpeg" alt="Young Adult Book 1">
+        <div class="book-details">
+          <div class="book-title">A Court of Thorns and Roses</div>
+          <p class="book-description">The story follows the journey of mortal Feyre Archeron after she is brought into the faerie lands of Prythian for murdering a faerie</p>
+        </div>
+      </div>
+
+      <div class="book-item">
+        <img src="Ya2. jpg.jpg" alt="Young Adult Book 2">
+        <div class="book-details">
+          <div class="book-title">Twisted Lies</div>
+          <p class="book-description">Based on a different friend from a group of women that were college roommates, this is Stella's story.</p>
+        </div>
+      </div>
+
+      <div class="book-item">
+        <img src="Ya3.jpeg" alt="Young Adult Book 3">
+        <div class="book-details">
+          <div class="book-title">Pride and Prejudice</div>
+          <p class="book-description">Mrs Bennet insists that her daughters find rich husbands and settle down. 
+            When a wealthy bachelor starts living near them, Mrs Bennet's happiness knows no bounds.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Thriller Books -->
+    <div id="Thriller" class="menu-content menu">
+      <div class="book-item">
+        <img src="T1.jpeg" alt="Thriller Book 1">
+        <div class="book-details">
+          <div class="book-title">Verity</div>
+          <p class="book-description">Verity is mainly about three people - struggling author Lowen Ashleigh,
+            a man called Jeremy Crawford, and Jeremy's wife, Verity, 
+            who was recently left incapacitated by a car accident. A Creepy thriller.</p>
+        </div>
+      </div>
+
+      <div class="book-item">
+        <img src="T2.jpeg" alt="Thriller Book 2">
+        <div class="book-details">
+          <div class="book-title">The Silent Patient</div>
+          <p class="book-description">The Silent Patient is a shocking 
+            psychological thriller of a woman's act of violence against her husband—and of the therapist obsessed with uncovering her motive. </p>
+        </div>
+      </div>
+
+      <div class="book-item">
+        <img src="T3.jpeg" alt="Thriller Book 3">
+        <div class="book-details">
+          <div class="book-title">A Good Girl's guide to murder</div>
+          <p class="book-description">Five years ago, Andie Bell, a girl in Pippa's village, was murdered by her boyfriend Sal Singh, 
+            but the body was never found. Pippa suspects it wasn't an open and shut case, 
+            and chooses to make a study of it for her final year project at school.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class = "text">
+    <p>Books are not for sale.</p>
+  </div>
+
+  <script>
+    // Tabbed Menu
+    function openMenu(evt, menuName) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("menu");
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      document.getElementById(menuName).style.display = "flex";
+    }
+    // Trigger click on the first menu link to display default content
+    document.querySelector(".menu-link").click();
+  </script>
+
+</body>
+</html>
